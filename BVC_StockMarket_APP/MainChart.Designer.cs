@@ -29,122 +29,74 @@ namespace BVC_StockMarket_APP
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.cBoxBarChart = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.chartSeries = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblOverview = new System.Windows.Forms.Label();
+            this.tableData = new System.Windows.Forms.TableLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSeries)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBox1
+            // chartSeries
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(384, 338);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(214, 129);
-            this.listBox1.TabIndex = 33;
+            chartArea1.Name = "ChartArea1";
+            this.chartSeries.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartSeries.Legends.Add(legend1);
+            this.chartSeries.Location = new System.Drawing.Point(28, 40);
+            this.chartSeries.Margin = new System.Windows.Forms.Padding(6);
+            this.chartSeries.Name = "chartSeries";
+            this.chartSeries.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Close";
+            this.chartSeries.Series.Add(series1);
+            this.chartSeries.Size = new System.Drawing.Size(594, 246);
+            this.chartSeries.TabIndex = 27;
+            this.chartSeries.Text = "chart1";
             // 
-            // cBoxBarChart
+            // lblOverview
             // 
-            this.cBoxBarChart.AutoSize = true;
-            this.cBoxBarChart.Location = new System.Drawing.Point(42, 310);
-            this.cBoxBarChart.Margin = new System.Windows.Forms.Padding(4);
-            this.cBoxBarChart.Name = "cBoxBarChart";
-            this.cBoxBarChart.Size = new System.Drawing.Size(135, 29);
-            this.cBoxBarChart.TabIndex = 32;
-            this.cBoxBarChart.Text = "Bar Chart";
-            this.cBoxBarChart.UseVisualStyleBackColor = true;
+            this.lblOverview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOverview.Location = new System.Drawing.Point(28, 292);
+            this.lblOverview.Name = "lblOverview";
+            this.lblOverview.Size = new System.Drawing.Size(594, 139);
+            this.lblOverview.TabIndex = 28;
             // 
-            // label4
+            // tableData
             // 
-            this.label4.Location = new System.Drawing.Point(66, 473);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(372, 37);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "label4";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(66, 417);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(460, 85);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "label3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 381);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 356);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "label1";
-            // 
-            // chart1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(28, 40);
-            this.chart1.Margin = new System.Windows.Forms.Padding(6);
-            this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(594, 246);
-            this.chart1.TabIndex = 27;
-            this.chart1.Text = "chart1";
+            this.tableData.ColumnCount = 2;
+            this.tableData.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableData.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableData.Location = new System.Drawing.Point(28, 435);
+            this.tableData.Name = "tableData";
+            this.tableData.RowCount = 2;
+            this.tableData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableData.Size = new System.Drawing.Size(594, 194);
+            this.tableData.TabIndex = 29;
             // 
             // MainChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.cBoxBarChart);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.chart1);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.tableData);
+            this.Controls.Add(this.lblOverview);
+            this.Controls.Add(this.chartSeries);
             this.Name = "MainChart";
-            this.Size = new System.Drawing.Size(650, 550);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.Size = new System.Drawing.Size(648, 657);
+            this.Load += new System.EventHandler(this.MainChart_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chartSeries)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.CheckBox cBoxBarChart;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSeries;
+        private System.Windows.Forms.Label lblOverview;
+        private System.Windows.Forms.TableLayoutPanel tableData;
     }
 }

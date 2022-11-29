@@ -20,8 +20,11 @@ namespace BVC_StockMarket_APP
 
         private void btnWatch_Click(object sender, EventArgs e)
         {
-            symbol = companySelection1.selectedSymbol;
+            //symbol = companySelection1.selectedSymbol;
+            symbol = "IBM";
             lblSymbol.Text = symbol;
+            MainChart mainChartX = new MainChart(symbol);
+            panelChart.Controls.Add(mainChartX);
         }
     }
 }
