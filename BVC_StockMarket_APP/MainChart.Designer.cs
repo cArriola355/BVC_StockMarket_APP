@@ -64,6 +64,7 @@ namespace BVC_StockMarket_APP
             this.lblOverview.Name = "lblOverview";
             this.lblOverview.Size = new System.Drawing.Size(594, 139);
             this.lblOverview.TabIndex = 28;
+            this.lblOverview.Click += new System.EventHandler(this.lblOverview_Click);
             // 
             // tableData
             // 

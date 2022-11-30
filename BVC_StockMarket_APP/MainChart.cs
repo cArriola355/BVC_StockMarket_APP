@@ -23,7 +23,7 @@ namespace BVC_StockMarket_APP
 
             List<string> bestMatches = alphaVantage.getBestMatches(mySymbol);
 
-            List<CoreStockData> alphaListMonthly = alphaVantage.getSeries(mySymbol, "TIME_SERIES_MONTHLY");
+            //List<CoreStockData> alphaListMonthly = alphaVantage.getSeries(mySymbol, "TIME_SERIES_MONTHLY");
             List<CoreStockData> alphaListDaily = alphaVantage.getSeries(mySymbol, "TIME_SERIES_DAILY_ADJUSTED");
             FundamentalData[] alphaListCompany = alphaVantage.getCompanyOverview(mySymbol);
 
@@ -57,6 +57,11 @@ namespace BVC_StockMarket_APP
         private void MainChart_Load(object sender, EventArgs e)
         {
             this.AutoScroll = true;
+        }
+
+        private void lblOverview_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
