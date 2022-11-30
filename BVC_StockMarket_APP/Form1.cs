@@ -35,6 +35,7 @@ namespace BVC_StockMarket_APP
         private void Form1_Load(object sender, EventArgs e)
         {
             radioBtnDaily.Checked = true;
+            panelChart.BackColor = Color.White;
         }
 
         private void radioBtnDaily_CheckedChanged(object sender, EventArgs e)
@@ -47,6 +48,16 @@ namespace BVC_StockMarket_APP
         {
             time_series = "TIME_SERIES_MONTHLY";
             time_series_formatted = "Monthly Series";
+        }
+
+        private void picBoxInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBoxHelp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

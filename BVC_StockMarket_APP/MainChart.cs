@@ -102,7 +102,7 @@ namespace BVC_StockMarket_APP
             newWindow.Show();
         }
 
-        private void btnExportXLS_Click(object sender, EventArgs e)
+        private void ExportXLS()
         {
             // Code snippet from: https://www.c-sharpcorner.com/UploadFile/hrojasara/export-datagridview-to-excel-in-C-Sharp/
             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
@@ -115,7 +115,7 @@ namespace BVC_StockMarket_APP
             for (int i = 1; i < dataGridMain.Columns.Count + 1; i++)
             {
                 worksheet.Cells[1, i] = dataGridMain.Columns[i - 1].HeaderText;
-            } 
+            }
             for (int i = 0; i < dataGridMain.Rows.Count - 1; i++)
             {
                 for (int j = 0; j < dataGridMain.Columns.Count; j++)
@@ -124,6 +124,11 @@ namespace BVC_StockMarket_APP
                 }
             }
             app.Quit();
+        }
+
+        private void lblExportXLS_Click(object sender, EventArgs e)
+        {
+            ExportXLS();
         }
     }
 }
