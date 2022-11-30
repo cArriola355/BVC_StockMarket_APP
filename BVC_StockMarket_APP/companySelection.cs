@@ -20,7 +20,12 @@ namespace BVC_StockMarket_APP
             InitializeComponent();
         }
 
-        private void tboxSearch_TextChanged(object sender, EventArgs e)
+        private void listBoxBestMatches_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedSymbol = listBoxBestMatches.SelectedItem.ToString();   
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
         {
             listBoxBestMatches.Items.Clear();
             string inputSymbol = tboxSearch.Text;
@@ -29,11 +34,6 @@ namespace BVC_StockMarket_APP
             {
                 listBoxBestMatches.Items.Add(result);
             }
-        }
-
-        private void listBoxBestMatches_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedSymbol = listBoxBestMatches.SelectedItem.ToString();   
         }
     }
 }

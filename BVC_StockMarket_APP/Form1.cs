@@ -13,6 +13,8 @@ namespace BVC_StockMarket_APP
     public partial class Form1 : Form
     {
         private string symbol { get; set; }
+        private string time_series { get; set; }
+        private string time_series_formatted { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -20,11 +22,31 @@ namespace BVC_StockMarket_APP
 
         private void btnWatch_Click(object sender, EventArgs e)
         {
-            symbol = companySelection1.selectedSymbol;
-            //symbol = "IBM";
-            lblSymbol.Text = symbol;
-            MainChart mainChartX = new MainChart(symbol);
+            panelChart.Controls.Clear();
+
+            //symbol = companySelection1.selectedSymbol;
+            symbol = "IBM";
+
+            lblSymbol.Text = "Symbol: " + symbol + " - " + time_series_formatted;
+            MainChart mainChartX = new MainChart(symbol, time_series);
             panelChart.Controls.Add(mainChartX);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            radioBtnDaily.Checked = true;
+        }
+
+        private void radioBtnDaily_CheckedChanged(object sender, EventArgs e)
+        {
+            time_series = "TIME_SERIES_DAILY_ADJUSTED";
+            time_series_formatted = "Daily Series";
+        }
+
+        private void radioBtnMonthly_CheckedChanged(object sender, EventArgs e)
+        {
+            time_series = "TIME_SERIES_MONTHLY";
+            time_series_formatted = "Monthly Series";
         }
     }
 }
