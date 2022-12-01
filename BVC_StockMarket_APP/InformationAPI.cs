@@ -12,8 +12,8 @@ namespace BVC_StockMarket_APP
 {
     public class InformationAPI
     {
-        //private static string apiKey = "2QWA2DXL6S3RQ6YX";
-        private static string apiKey = "demo";
+        private static string apiKey = "2QWA2DXL6S3RQ6YX";
+        //private static string apiKey = "demo";
 
         //
         // Method to Get the Data from the input symbol

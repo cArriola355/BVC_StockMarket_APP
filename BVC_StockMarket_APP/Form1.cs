@@ -24,8 +24,8 @@ namespace BVC_StockMarket_APP
         {
             panelChart.Controls.Clear();
 
-            //symbol = companySelection1.selectedSymbol;
-            symbol = "IBM";
+            symbol = companySelection1.selectedSymbol;
+            //symbol = "IBM";
 
             lblSymbol.Text = "Symbol: " + symbol + " - " + time_series_formatted;
             MainChart mainChartX = new MainChart(symbol, time_series);
