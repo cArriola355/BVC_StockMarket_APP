@@ -24,3 +24,29 @@ C:\Users\da_os\Documents\Personal\BVC\06Fall2022\SODV2101 - Rapid App\Project\BV
 C:\Users\da_os\Documents\Personal\BVC\06Fall2022\SODV2101 - Rapid App\Project\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.Form1.resources
 C:\Users\da_os\Documents\Personal\BVC\06Fall2022\SODV2101 - Rapid App\Project\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.MaxChart.resources
 C:\Users\da_os\Documents\Personal\BVC\06Fall2022\SODV2101 - Rapid App\Project\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.csproj.AssemblyReference.cache
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\BVC_StockMarket_APP.exe.config
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\BVC_StockMarket_APP.exe
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\BVC_StockMarket_APP.pdb
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\ServiceStack.Text.dll
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Buffers.dll
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Memory.dll
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\ServiceStack.Text.xml
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Buffers.xml
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Memory.xml
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.csproj.AssemblyReference.cache
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.companySelection.resources
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.Form1.resources
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.MainChart.resources
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.MaxChart.resources
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.Properties.Resources.resources
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.csproj.GenerateResource.cache
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.csproj.CoreCompileInputs.cache
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.csproj.CopyComplete
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.exe
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.pdb
