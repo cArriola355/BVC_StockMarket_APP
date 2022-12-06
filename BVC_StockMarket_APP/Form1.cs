@@ -52,15 +52,16 @@ namespace BVC_StockMarket_APP
 
         private void picBoxInfo_Click(object sender, EventArgs e)
         {
-            lblInfo.Text = "This App is created for students and potential stock buyer's alike.\n" +
-                 "\n By creating this App, users will be able to know more about stocks without\n" +
-                 " \n the use of money.";
+            InfoForm popup = new InfoForm();
+            DialogResult dialogResult = popup.ShowDialog();
         }
 
         private void picBoxHelp_Click(object sender, EventArgs e)
         {
-            lblHelp.Text = "For more Info or Assistance please Email us at ";
-            lblHelp2.Text = "MyBVCStockApp@gmail.com";
+            HelpForm popup = new HelpForm();
+            DialogResult dialogResult = popup.ShowDialog();
+           
+
         }
 
         private void panelChart_Paint(object sender, PaintEventArgs e)

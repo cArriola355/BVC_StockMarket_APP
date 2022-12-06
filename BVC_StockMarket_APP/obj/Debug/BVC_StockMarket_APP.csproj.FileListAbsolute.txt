@@ -50,3 +50,5 @@ C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debu
 C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.csproj.CopyComplete
 C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.exe
 C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.pdb
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.HelpForm.resources
+C:\Users\psyko\Documents\GitHub\BVC_StockMarket_APP\BVC_StockMarket_APP\obj\Debug\BVC_StockMarket_APP.InfoForm.resources
