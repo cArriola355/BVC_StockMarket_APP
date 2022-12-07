@@ -38,8 +38,8 @@ namespace BVC_StockMarket_APP
             this.panel2 = new System.Windows.Forms.Panel();
             this.picBoxHelp = new System.Windows.Forms.PictureBox();
             this.picBoxInfo = new System.Windows.Forms.PictureBox();
-            this.companySelection1 = new BVC_StockMarket_APP.companySelection();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.companySelection1 = new BVC_StockMarket_APP.companySelection();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxHelp)).BeginInit();
@@ -65,7 +65,7 @@ namespace BVC_StockMarket_APP
             // 
             this.btnWatch.BackColor = System.Drawing.Color.White;
             this.btnWatch.Location = new System.Drawing.Point(77, 322);
-            this.btnWatch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWatch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWatch.Name = "btnWatch";
             this.btnWatch.Size = new System.Drawing.Size(57, 22);
             this.btnWatch.TabIndex = 3;
@@ -78,9 +78,9 @@ namespace BVC_StockMarket_APP
             this.panelChart.BackColor = System.Drawing.Color.White;
             this.panelChart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChart.Location = new System.Drawing.Point(204, 41);
-            this.panelChart.Margin = new System.Windows.Forms.Padding(2);
+            this.panelChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelChart.Name = "panelChart";
-            this.panelChart.Size = new System.Drawing.Size(450, 417);
+            this.panelChart.Size = new System.Drawing.Size(450, 469);
             this.panelChart.TabIndex = 4;
             // 
             // panel1
@@ -93,6 +93,7 @@ namespace BVC_StockMarket_APP
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 30);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // radioBtnDaily
             // 
@@ -151,41 +152,41 @@ namespace BVC_StockMarket_APP
             this.picBoxInfo.TabStop = false;
             this.picBoxInfo.Click += new System.EventHandler(this.picBoxInfo_Click);
             // 
-            // companySelection1
-            // 
-            this.companySelection1.BackColor = System.Drawing.Color.White;
-            this.companySelection1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.companySelection1.Location = new System.Drawing.Point(9, 8);
-            this.companySelection1.Margin = new System.Windows.Forms.Padding(6);
-            this.companySelection1.Name = "companySelection1";
-            this.companySelection1.selectedSymbol = null;
-            this.companySelection1.Size = new System.Drawing.Size(188, 450);
-            this.companySelection1.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(142)))), ((int)(((byte)(36)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.picBoxInfo);
             this.panel3.Controls.Add(this.picBoxHelp);
-            this.panel3.Location = new System.Drawing.Point(9, 428);
+            this.panel3.Location = new System.Drawing.Point(9, 480);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(188, 30);
             this.panel3.TabIndex = 12;
+            // 
+            // companySelection1
+            // 
+            this.companySelection1.BackColor = System.Drawing.Color.White;
+            this.companySelection1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.companySelection1.Location = new System.Drawing.Point(9, 8);
+            this.companySelection1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.companySelection1.Name = "companySelection1";
+            this.companySelection1.selectedSymbol = null;
+            this.companySelection1.Size = new System.Drawing.Size(188, 502);
+            this.companySelection1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(663, 467);
+            this.ClientSize = new System.Drawing.Size(663, 517);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelChart);
             this.Controls.Add(this.btnWatch);
             this.Controls.Add(this.companySelection1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

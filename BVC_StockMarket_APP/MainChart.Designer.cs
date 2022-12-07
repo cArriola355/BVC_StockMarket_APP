@@ -29,9 +29,9 @@ namespace BVC_StockMarket_APP
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartSeries = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblOverview = new System.Windows.Forms.Label();
             this.dataGridMain = new System.Windows.Forms.DataGridView();
@@ -46,6 +46,9 @@ namespace BVC_StockMarket_APP
             this.picBoxXLS = new System.Windows.Forms.PictureBox();
             this.lblExportXLS = new System.Windows.Forms.Label();
             this.panelExport = new System.Windows.Forms.Panel();
+            this.lblSummary = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartSeries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxXLS)).BeginInit();
@@ -54,26 +57,26 @@ namespace BVC_StockMarket_APP
             // 
             // chartSeries
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartSeries.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartSeries.Legends.Add(legend3);
-            this.chartSeries.Location = new System.Drawing.Point(14, 21);
+            chartArea1.Name = "ChartArea1";
+            this.chartSeries.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartSeries.Legends.Add(legend1);
+            this.chartSeries.Location = new System.Drawing.Point(14, 43);
             this.chartSeries.Margin = new System.Windows.Forms.Padding(0);
             this.chartSeries.Name = "chartSeries";
             this.chartSeries.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Close";
-            this.chartSeries.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Close";
+            this.chartSeries.Series.Add(series1);
             this.chartSeries.Size = new System.Drawing.Size(406, 128);
             this.chartSeries.TabIndex = 27;
             this.chartSeries.Text = "chart1";
             // 
             // lblOverview
             // 
-            this.lblOverview.Location = new System.Drawing.Point(14, 156);
+            this.lblOverview.Location = new System.Drawing.Point(14, 193);
             this.lblOverview.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOverview.Name = "lblOverview";
             this.lblOverview.Size = new System.Drawing.Size(406, 94);
@@ -93,14 +96,14 @@ namespace BVC_StockMarket_APP
             this.col4_low,
             this.col5_close,
             this.col6_volume});
-            this.dataGridMain.Location = new System.Drawing.Point(14, 252);
-            this.dataGridMain.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridMain.Location = new System.Drawing.Point(14, 313);
+            this.dataGridMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridMain.Name = "dataGridMain";
             this.dataGridMain.ReadOnly = true;
             this.dataGridMain.RowHeadersVisible = false;
             this.dataGridMain.RowHeadersWidth = 82;
             this.dataGridMain.RowTemplate.Height = 33;
-            this.dataGridMain.Size = new System.Drawing.Size(406, 135);
+            this.dataGridMain.Size = new System.Drawing.Size(406, 124);
             this.dataGridMain.TabIndex = 29;
             // 
             // col1_date
@@ -154,7 +157,7 @@ namespace BVC_StockMarket_APP
             // chBoxType
             // 
             this.chBoxType.AutoSize = true;
-            this.chBoxType.Location = new System.Drawing.Point(17, 3);
+            this.chBoxType.Location = new System.Drawing.Point(17, 25);
             this.chBoxType.Name = "chBoxType";
             this.chBoxType.Size = new System.Drawing.Size(78, 17);
             this.chBoxType.TabIndex = 30;
@@ -164,7 +167,7 @@ namespace BVC_StockMarket_APP
             // 
             // btnMaxChart
             // 
-            this.btnMaxChart.Location = new System.Drawing.Point(101, 0);
+            this.btnMaxChart.Location = new System.Drawing.Point(101, 22);
             this.btnMaxChart.Name = "btnMaxChart";
             this.btnMaxChart.Size = new System.Drawing.Size(96, 20);
             this.btnMaxChart.TabIndex = 31;
@@ -198,25 +201,61 @@ namespace BVC_StockMarket_APP
             // 
             this.panelExport.Controls.Add(this.picBoxXLS);
             this.panelExport.Controls.Add(this.lblExportXLS);
-            this.panelExport.Location = new System.Drawing.Point(17, 392);
+            this.panelExport.Location = new System.Drawing.Point(17, 442);
             this.panelExport.Name = "panelExport";
             this.panelExport.Size = new System.Drawing.Size(143, 19);
             this.panelExport.TabIndex = 35;
+            // 
+            // lblSummary
+            // 
+            this.lblSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummary.Location = new System.Drawing.Point(11, 0);
+            this.lblSummary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSummary.Name = "lblSummary";
+            this.lblSummary.Size = new System.Drawing.Size(91, 22);
+            this.lblSummary.TabIndex = 0;
+            this.lblSummary.Text = "Summary";
+            this.lblSummary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(11, 171);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(91, 22);
+            this.lblDescription.TabIndex = 36;
+            this.lblDescription.Text = "Description";
+            this.lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblData
+            // 
+            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Location = new System.Drawing.Point(11, 289);
+            this.lblData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(152, 22);
+            this.lblData.TabIndex = 37;
+            this.lblData.Text = "Historical Data";
+            this.lblData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lblData);
+            this.Controls.Add(this.lblDescription);
+            this.Controls.Add(this.lblSummary);
             this.Controls.Add(this.panelExport);
             this.Controls.Add(this.btnMaxChart);
             this.Controls.Add(this.chBoxType);
             this.Controls.Add(this.dataGridMain);
             this.Controls.Add(this.lblOverview);
             this.Controls.Add(this.chartSeries);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainChart";
-            this.Size = new System.Drawing.Size(452, 419);
+            this.Size = new System.Drawing.Size(452, 468);
             this.Load += new System.EventHandler(this.MainChart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartSeries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMain)).EndInit();
@@ -243,5 +282,8 @@ namespace BVC_StockMarket_APP
         private System.Windows.Forms.PictureBox picBoxXLS;
         private System.Windows.Forms.Label lblExportXLS;
         private System.Windows.Forms.Panel panelExport;
+        private System.Windows.Forms.Label lblSummary;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblData;
     }
 }
