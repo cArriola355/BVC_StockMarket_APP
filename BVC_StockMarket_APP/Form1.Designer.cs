@@ -29,12 +29,9 @@ namespace BVC_StockMarket_APP
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblSymbol = new System.Windows.Forms.Label();
             this.btnWatch = new System.Windows.Forms.Button();
             this.panelChart = new System.Windows.Forms.Panel();
-            this.lblHelp2 = new System.Windows.Forms.LinkLabel();
-            this.lblHelp = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioBtnDaily = new System.Windows.Forms.RadioButton();
             this.radioBtnMonthly = new System.Windows.Forms.RadioButton();
@@ -42,11 +39,7 @@ namespace BVC_StockMarket_APP
             this.picBoxHelp = new System.Windows.Forms.PictureBox();
             this.picBoxInfo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.clrbtn = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.companySelection1 = new BVC_StockMarket_APP.companySelection();
-            this.panelChart.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxHelp)).BeginInit();
@@ -72,7 +65,7 @@ namespace BVC_StockMarket_APP
             // 
             this.btnWatch.BackColor = System.Drawing.Color.White;
             this.btnWatch.Location = new System.Drawing.Point(77, 322);
-            this.btnWatch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWatch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWatch.Name = "btnWatch";
             this.btnWatch.Size = new System.Drawing.Size(57, 22);
             this.btnWatch.TabIndex = 3;
@@ -84,30 +77,11 @@ namespace BVC_StockMarket_APP
             // 
             this.panelChart.BackColor = System.Drawing.Color.White;
             this.panelChart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelChart.Controls.Add(this.lblHelp2);
-            this.panelChart.Controls.Add(this.lblHelp);
             this.panelChart.Location = new System.Drawing.Point(204, 41);
-            this.panelChart.Margin = new System.Windows.Forms.Padding(2);
+            this.panelChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelChart.Name = "panelChart";
-            this.panelChart.Size = new System.Drawing.Size(450, 417);
+            this.panelChart.Size = new System.Drawing.Size(450, 469);
             this.panelChart.TabIndex = 4;
-            this.panelChart.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChart_Paint);
-            // 
-            // lblHelp2
-            // 
-            this.lblHelp2.AutoSize = true;
-            this.lblHelp2.Location = new System.Drawing.Point(28, 315);
-            this.lblHelp2.Name = "lblHelp2";
-            this.lblHelp2.Size = new System.Drawing.Size(0, 13);
-            this.lblHelp2.TabIndex = 1;
-            // 
-            // lblHelp
-            // 
-            this.lblHelp.AutoSize = true;
-            this.lblHelp.Location = new System.Drawing.Point(28, 289);
-            this.lblHelp.Name = "lblHelp";
-            this.lblHelp.Size = new System.Drawing.Size(0, 13);
-            this.lblHelp.TabIndex = 0;
             // 
             // panel1
             // 
@@ -119,6 +93,7 @@ namespace BVC_StockMarket_APP
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 30);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // radioBtnDaily
             // 
@@ -183,52 +158,20 @@ namespace BVC_StockMarket_APP
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.picBoxInfo);
             this.panel3.Controls.Add(this.picBoxHelp);
-            this.panel3.Location = new System.Drawing.Point(9, 428);
+            this.panel3.Location = new System.Drawing.Point(9, 480);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(188, 30);
             this.panel3.TabIndex = 12;
-            // 
-            // lblInfo
-            // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(233, 186);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(0, 13);
-            this.lblInfo.TabIndex = 0;
-            // 
-            // clrbtn
-            // 
-            this.clrbtn.BackColor = System.Drawing.Color.White;
-            this.clrbtn.Location = new System.Drawing.Point(45, 352);
-            this.clrbtn.Margin = new System.Windows.Forms.Padding(2);
-            this.clrbtn.Name = "clrbtn";
-            this.clrbtn.Size = new System.Drawing.Size(57, 22);
-            this.clrbtn.TabIndex = 13;
-            this.clrbtn.Text = "Clear";
-            this.clrbtn.UseVisualStyleBackColor = false;
-            this.clrbtn.Click += new System.EventHandler(this.clrbtn_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(108, 352);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(57, 22);
-            this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // companySelection1
             // 
             this.companySelection1.BackColor = System.Drawing.Color.White;
             this.companySelection1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.companySelection1.Location = new System.Drawing.Point(9, 8);
-            this.companySelection1.Margin = new System.Windows.Forms.Padding(6);
+            this.companySelection1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.companySelection1.Name = "companySelection1";
             this.companySelection1.selectedSymbol = null;
-            this.companySelection1.Size = new System.Drawing.Size(188, 450);
+            this.companySelection1.Size = new System.Drawing.Size(188, 502);
             this.companySelection1.TabIndex = 0;
             // 
             // Form1
@@ -236,24 +179,17 @@ namespace BVC_StockMarket_APP
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(663, 467);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.clrbtn);
-            this.Controls.Add(this.lblInfo);
+            this.ClientSize = new System.Drawing.Size(663, 517);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelChart);
             this.Controls.Add(this.btnWatch);
             this.Controls.Add(this.companySelection1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelChart.ResumeLayout(false);
-            this.panelChart.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -262,7 +198,6 @@ namespace BVC_StockMarket_APP
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInfo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -279,11 +214,6 @@ namespace BVC_StockMarket_APP
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox picBoxHelp;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.Label lblHelp;
-        private System.Windows.Forms.LinkLabel lblHelp2;
-        private System.Windows.Forms.Button clrbtn;
-        private System.Windows.Forms.Button btnExit;
     }
 }
 

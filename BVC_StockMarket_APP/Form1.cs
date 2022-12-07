@@ -52,33 +52,17 @@ namespace BVC_StockMarket_APP
 
         private void picBoxInfo_Click(object sender, EventArgs e)
         {
-            InfoForm popup = new InfoForm();
-            DialogResult dialogResult = popup.ShowDialog();
+
         }
 
         private void picBoxHelp_Click(object sender, EventArgs e)
         {
-            HelpForm popup = new HelpForm();
-            DialogResult dialogResult = popup.ShowDialog();
-           
 
         }
 
-        private void panelChart_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void clrbtn_Click(object sender, EventArgs e)
-        {
-            lblInfo.Text = string.Empty;
-            lblHelp.Text = string.Empty;
-            lblHelp2.Text = string.Empty;
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
